@@ -14,6 +14,7 @@ import android.support.v7.widget.Toolbar;
 import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.TextView;
 
 import com.example.thinkpad.testdemo.adapter.MyPagerAdapter;
 import com.example.thinkpad.testdemo.fragment.Fragment1;
@@ -33,6 +34,7 @@ public class MainActivity extends AppCompatActivity {
     private ViewPager mViewPager;
     private List<Fragment> mFragmentList = new ArrayList<>();
     private LayoutInflater mInflater;
+    private TextView toolbar_title;
 
     @Override
     protected void onCreate(Bundle savedInstanceState)
@@ -42,12 +44,15 @@ public class MainActivity extends AppCompatActivity {
 
         mDrawerLayout = (DrawerLayout) findViewById(R.id.id_drawer_layout);
         mNavigationView = (NavigationView) findViewById(R.id.id_nv_menu);
-
+        toolbar_title = (TextView) findViewById(R.id.toolbar_title);
+        toolbar_title.setText("网络概述");
         Toolbar toolbar = (Toolbar) findViewById(R.id.id_toolbar);
+        toolbar.setTitle("");
         setSupportActionBar(toolbar);
 
+
         final ActionBar ab = getSupportActionBar();
-       // ab.setHomeAsUpIndicator(android.R.drawable.);
+
         ab.setDisplayHomeAsUpEnabled(true);
 
         setupDrawerContent(mNavigationView);

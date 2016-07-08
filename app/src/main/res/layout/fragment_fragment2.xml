@@ -4,10 +4,165 @@
     android:layout_height="match_parent"
     tools:context="com.example.thinkpad.testdemo.fragment.Fragment2">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:text="页面2" />
+        android:orientation="vertical">
+    <TextView
+        android:id="@+id/lte_ywl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/ywl"
+        android:textSize="14sp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:drawableLeft="@drawable/section0"
+        />
+    <View
+        style="@style/divider_line_horizontal"
+        android:layout_marginTop="10dp"/>
 
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        android:orientation="horizontal">
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:gravity="center">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ps域总业务量"
+                android:textColor="@color/colorPrimary"
+                android:textSize="14sp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1532M"
+                />
+            <ImageView
+                android:layout_width="@dimen/fragment_icon"
+                android:layout_height="@dimen/fragment_icon"
+                android:layout_marginTop="20dp"
+                android:src="@drawable/kkyw_icon"
+                />
+
+        </LinearLayout>
+        <View
+            style="@style/divider_line_vertical"
+            />
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+
+            android:orientation="vertical"
+            >
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="@dimen/fragment_lin_left_margin"
+                android:orientation="horizontal">
+                <ImageView
+                    android:layout_width="@dimen/fragment_icon"
+                    android:layout_height="@dimen/fragment_icon"
+                    android:src="@drawable/sxkk_icon"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:maxLines="2"
+                    android:layout_marginLeft="@dimen/fragment_text_left_margin"
+                    android:text="上行业务量\n1324MB"/>
+
+            </LinearLayout>
+            <View
+                style="@style/divider_line_horizontal"
+                />
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="@dimen/fragment_lin_left_margin"
+                android:orientation="horizontal">
+                <ImageView
+                    android:layout_width="@dimen/fragment_icon"
+                    android:layout_height="@dimen/fragment_icon"
+                    android:src="@drawable/xxkk_icon"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:maxLines="2"
+                    android:layout_marginLeft="@dimen/fragment_text_left_margin"
+                    android:text="下行业务量\n1324MB"/>
+
+            </LinearLayout>
+        </LinearLayout>
+
+
+    </LinearLayout>
+    <View
+        style="@style/divider_line_horizontal"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:layout_marginLeft="@dimen/fragment_lin_left_margin"
+            android:orientation="horizontal">
+            <ImageView
+                android:layout_width="@dimen/fragment_icon"
+                android:layout_height="@dimen/fragment_icon"
+                android:src="@drawable/td_yyhw"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:maxLines="2"
+                android:layout_marginLeft="@dimen/fragment_text_left_margin"
+                android:text="语音话务量\n1324Erl"/>
+
+        </LinearLayout>
+        <View
+            style="@style/divider_line_vertical"
+            />
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:layout_marginLeft="@dimen/fragment_lin_left_margin"
+            android:orientation="horizontal">
+            <ImageView
+                android:layout_width="@dimen/fragment_icon"
+                android:layout_height="@dimen/fragment_icon"
+                android:src="@drawable/td_spll"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:maxLines="2"
+                android:layout_marginLeft="@dimen/fragment_text_left_margin"
+                android:text="视频话务量\n1324Erl"/>
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="5.3"
+        ></LinearLayout>
+    </LinearLayout>
 </FrameLayout>

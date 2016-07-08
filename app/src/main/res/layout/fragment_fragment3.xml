@@ -3,11 +3,74 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context="com.example.thinkpad.testdemo.fragment.Fragment3">
-
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:text="页面3" />
+        android:orientation="vertical">
+    <TextView
+        android:id="@+id/lte_ywl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/ywl"
+        android:textSize="14sp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:drawableLeft="@drawable/section0"
+        />
+    <View
+        style="@style/divider_line_horizontal"
+        android:layout_marginTop="10dp"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:layout_marginLeft="@dimen/fragment_lin_left_margin"
+            android:orientation="horizontal">
+            <ImageView
+                android:layout_width="@dimen/fragment_icon"
+                android:layout_height="@dimen/fragment_icon"
+                android:src="@drawable/td_yyhw"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:maxLines="2"
+                android:layout_marginLeft="@dimen/fragment_text_left_margin"
+                android:text="话务量\n1324Erl"/>
+
+        </LinearLayout>
+        <View
+            style="@style/divider_line_vertical"
+            />
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:layout_marginLeft="@dimen/fragment_lin_left_margin"
+            android:orientation="horizontal">
+            <ImageView
+                android:layout_width="@dimen/fragment_icon"
+                android:layout_height="@dimen/fragment_icon"
+                android:src="@drawable/sxkk_icon"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:maxLines="2"
+                android:layout_marginLeft="@dimen/fragment_text_left_margin"
+                android:text="流量\n1324Erl"/>
+
+        </LinearLayout>
+    </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="6.3"></LinearLayout>
+</LinearLayout>
 
 </FrameLayout>
